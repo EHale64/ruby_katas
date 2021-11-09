@@ -2,11 +2,11 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'json'
 require 'pry'
-require_relative '../lib/decipher'
+require_relative '../lib/cipher'
 
-class DecipherTest < MiniTest::Test
+class CipherTest < MiniTest::Test
     def setup
-        @decipher = Decipher.new
+        @decipher = Cipher.new
     end
     def test_it_decodes
         assert_equal "A wise old owl lived in an oak", @decipher.decipher_this("65 119esi 111dl 111lw 108dvei 105n 97n 111ka")
